@@ -1,0 +1,139 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <GeometryGroup x:Key="stone" FillRule="Nonzero">
+        <EllipseGeometry Center="25,25" RadiusX="5" RadiusY="5"></EllipseGeometry>
+        <EllipseGeometry Center="25,25" RadiusX="10" RadiusY="10"></EllipseGeometry>
+        <EllipseGeometry Center="25,25" RadiusX="15" RadiusY="15"></EllipseGeometry>
+        <EllipseGeometry Center="25,25" RadiusX="20" RadiusY="20"></EllipseGeometry>
+    </GeometryGroup>
+    <GeometryGroup x:Key="king" FillRule="Nonzero">
+        <EllipseGeometry Center="25,25" RadiusX="20" RadiusY="20"/>
+        <EllipseGeometry Center="25,25" RadiusX="18.5" RadiusY="18.5"/>
+
+    </GeometryGroup>
+    <GeometryGroup x:Key="crown" FillRule="Nonzero">
+        <LineGeometry StartPoint="13,35" EndPoint="20,34"></LineGeometry>
+        <LineGeometry StartPoint="20,34" EndPoint="25,33.5"></LineGeometry>
+        <LineGeometry StartPoint="25,33.5" EndPoint="30,34"></LineGeometry>
+        <LineGeometry StartPoint="30,34" EndPoint="37,35"></LineGeometry>
+
+        <LineGeometry StartPoint="14,31" EndPoint="20,30"></LineGeometry>
+        <LineGeometry StartPoint="20,30" EndPoint="25,29.5"></LineGeometry>
+        <LineGeometry StartPoint="25,29.5" EndPoint="30,30"></LineGeometry>
+        <LineGeometry StartPoint="30,30" EndPoint="36,31"></LineGeometry>
+
+        <LineGeometry StartPoint="14,35" EndPoint="13,30"></LineGeometry>
+        <LineGeometry StartPoint="13,30" EndPoint="10,21"></LineGeometry>
+        <LineGeometry StartPoint="10,21" EndPoint="16,29"></LineGeometry>
+        <LineGeometry StartPoint="16,29" EndPoint="17,17"></LineGeometry>
+        <LineGeometry StartPoint="17,17" EndPoint="22,27"></LineGeometry>
+        <LineGeometry StartPoint="22,27" EndPoint="25,15"></LineGeometry>
+
+        <LineGeometry StartPoint="36,35" EndPoint="37,30"></LineGeometry>
+        <LineGeometry StartPoint="37,30" EndPoint="40,21"></LineGeometry>
+        <LineGeometry StartPoint="40,21" EndPoint="34,29"></LineGeometry>
+        <LineGeometry StartPoint="34,29" EndPoint="33,17"></LineGeometry>
+        <LineGeometry StartPoint="33,17" EndPoint="28,27"></LineGeometry>
+        <LineGeometry StartPoint="28,27" EndPoint="25,15"></LineGeometry>
+
+        <EllipseGeometry Center="10,20" RadiusX="1.0" RadiusY="1.0"/>
+        <EllipseGeometry Center="17,16" RadiusX="1.2" RadiusY="1.2"/>
+        <EllipseGeometry Center="25,14" RadiusX="1.3" RadiusY="1.3"/>
+        <EllipseGeometry Center="33,16" RadiusX="1.2" RadiusY="1.2"/>
+        <EllipseGeometry Center="40,20" RadiusX="1.0" RadiusY="1.0"/>
+
+    </GeometryGroup>
+
+    <LinearGradientBrush x:Key="strokeB">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="Gray" Offset="0"></GradientStop>
+            <GradientStop Offset="0.5">
+                <GradientStop.Color>
+                    <Color A="255" R="20" G="20" B="20"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="fillB" >
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0">
+                <GradientStop.Color>
+                    <Color A="255" R="0" G="0" B="0"/>
+                </GradientStop.Color>
+            </GradientStop>
+            <GradientStop Offset="0.5">
+                <GradientStop.Color>
+                    <Color A="255" R="45" G="45" B="55"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="strokeW">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0">
+                <GradientStop.Color>
+                    <Color A="255" R="255" G="255" B="235"/>
+                </GradientStop.Color>
+            </GradientStop>
+            <GradientStop Offset="0.5">
+                <GradientStop.Color>
+                    <Color A="255" R="215" G="215" B="130"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="fillW" >
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0">
+                <GradientStop.Color>
+                    <Color A="255" R="185" G="180" B="130"/>
+                </GradientStop.Color>
+            </GradientStop>
+            <GradientStop Offset="0.6">
+                <GradientStop.Color>
+                    <Color A="255" R="240" G="235" B="185"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="strokeBG">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0">
+                <GradientStop.Color>
+                    <Color A="255" R="250" G="235" B="175"/>
+                </GradientStop.Color>
+            </GradientStop>
+            <GradientStop Offset="0.6">
+                <GradientStop.Color>
+                    <Color A="255" R="90" G="70" B="00"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="strokeWG">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0">
+                <GradientStop.Color>
+                    <Color A="255" R="255" G="215" B="150"/>
+                </GradientStop.Color>
+            </GradientStop>
+            <GradientStop Offset="0.6">
+                <GradientStop.Color>
+                    <Color A="255" R="220" G="180" B="100"/>
+                </GradientStop.Color>
+            </GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="strokeBS">
+        <SolidColorBrush.Color>
+            <Color A="255" R="20" G="20" B="20"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+    <SolidColorBrush x:Key="strokeWS">
+        <SolidColorBrush.Color>
+            <Color A="255" R="215" G="215" B="130"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+
+</ResourceDictionary>

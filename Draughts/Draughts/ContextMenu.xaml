@@ -1,0 +1,45 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Draughts">
+    
+    <ContextMenu x:Key="context1" Width="35" Visibility="Hidden" IsEnabled="False">
+        <MenuItem Name="empty" Command="local:DataCommands.Delete">
+            <MenuItem.Icon>
+                    <Rectangle Stroke="Black" Height="14" Width="14"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Name="black" Command="local:DataCommands.AddBlack" >
+            <MenuItem.Icon>
+                <Ellipse Height="14" Width="14" Fill="{StaticResource fillB}"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Name="white" Command="local:DataCommands.AddWhite">
+            <MenuItem.Icon>
+                <Ellipse Height="14" Width="14" Fill="{StaticResource fillW}"/>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Name="kingB" Command="local:DataCommands.AddBlackKing">
+            <MenuItem.Icon>
+                <Canvas>
+                    <Ellipse Canvas.Left="4" Canvas.Top="-7" Height="14" Width="14"
+                                                                Fill="{StaticResource fillB}"/>
+                    <Viewbox Canvas.Left="4" Canvas.Top="-8.5" Height="12" Width="12">
+                        <Path Data="{StaticResource crown}" Stroke="white"/>
+                    </Viewbox>
+                </Canvas>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Name="kingW" Command="local:DataCommands.AddWhiteKing">
+            <MenuItem.Icon>
+                <Canvas>
+                    <Ellipse Canvas.Left="4" Canvas.Top="-7" Height="14" Width="14"
+                             Fill="{StaticResource fillW}"/>
+                    <Viewbox Canvas.Left="4" Canvas.Top="-8.5" Height="12" Width="12">
+                        <Path Data="{StaticResource crown}" Stroke="black"/>
+                    </Viewbox>
+                </Canvas>
+            </MenuItem.Icon>
+        </MenuItem>
+    </ContextMenu>
+
+</ResourceDictionary>
